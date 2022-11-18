@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TodoItem = ({ todo }) => {
+const TodoItem = ({ todo, handleDelete }) => {
     // const todo = props.todo
     //style
     const style = {
@@ -8,7 +8,7 @@ const TodoItem = ({ todo }) => {
         color: 'black'
     }
     return (
-        <li style={style}>{todo.title}</li>
+        <li onClick={() => { handleDelete(todo.id) }} style={style}>{todo.title}</li>
     )
 }
 

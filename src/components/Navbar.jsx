@@ -4,7 +4,6 @@ const Navbar = () => {
     const style = {
         background: 'rgb(240, 240, 240)',
         color: 'black'
-
     }
     return (
         <div className="navbar" style={style}>
